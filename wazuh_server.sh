@@ -14,10 +14,10 @@ echo "=== Installation de Wazuh server ==="
 read -p "Entrez l'adresse IP du serveur : " SERVER_IP
 read -p "Entrez le nom du serveur : " SERVER_NAME
 
-curl -sO https://packages.wazuh.com/4.11/wazuh-install.sh
+curl -sO https://packages.wazuh.com/4.12/wazuh-install.sh
 check_success "Fichier wazuh-install.sh téléchargé"
 
-curl -sO https://packages.wazuh.com/4.11/config.yml
+curl -sO https://packages.wazuh.com/4.12/config.yml
 check_success "Fichier config.yml téléchargé (sera remplacé)"
 
 cat <<EOF > config.yml
@@ -40,7 +40,7 @@ check_success "Fichier config.yml généré avec succès"
 bash wazuh-install.sh --generate-config-files
 check_success "Fichiers de configuration générés"
 
-curl -sO https://packages.wazuh.com/4.11/wazuh-install.sh
+curl -sO https://packages.wazuh.com/4.12/wazuh-install.sh
 check_success "Script wazuh-install.sh re-téléchargé"
 
 bash wazuh-install.sh --wazuh-indexer "$SERVER_NAME"
