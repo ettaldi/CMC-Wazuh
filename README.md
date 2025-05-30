@@ -24,7 +24,7 @@ sudo apt install git -y
 
 #### Clonez le dépôt
 ```bash
-sudo git clone https://github.com/ettaldi/Wazuh
+sudo git clone https://github.com/ettaldi/CMC-Wazuh
 ```
 
 #### Entrez dans le répertoire
