@@ -29,7 +29,7 @@ sudo git clone https://github.com/ettaldi/CMC-Wazuh
 
 #### Entrez dans le répertoire
 ```bash
-cd Wazuh
+cd CMC-Wazuh
 ```
 
 ## **Installation Wazuh server**
